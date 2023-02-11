@@ -2953,7 +2953,7 @@ GameObject:
   - component: {fileID: 677929829}
   - component: {fileID: 677929828}
   m_Layer: 0
-  m_Name: Trap (1)
+  m_Name: Trap2D
   m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3430,7 +3430,7 @@ GameObject:
   - component: {fileID: 1115349503}
   - component: {fileID: 1115349502}
   m_Layer: 0
-  m_Name: Food (1)
+  m_Name: Food2D
   m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3713,7 +3713,7 @@ GameObject:
   - component: {fileID: 1875594825}
   - component: {fileID: 1875594824}
   m_Layer: 0
-  m_Name: MouseHome (1)
+  m_Name: MouseHome2D
   m_TagString: Home
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
