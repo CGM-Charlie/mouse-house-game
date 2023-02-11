@@ -28,7 +28,7 @@ public class FoodPickupScr : MonoBehaviour
     {
         if(other.gameObject.tag == "Food")
         {
-            Debug.Log("HOW");
+            //Debug.Log("Check");
             canpickup = true;  
             ObjectIwantToPickUp = other.gameObject; 
             foodItems += 1;

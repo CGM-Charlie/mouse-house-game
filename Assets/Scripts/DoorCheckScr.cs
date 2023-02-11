@@ -25,7 +25,6 @@ public class DoorCheckScr : MonoBehaviour
         if(other.gameObject.tag == "Home") 
         {
             checkFood();
-            Debug.Log("HOW");
             ObjectIwantToPickUp = other.gameObject; 
             
         }

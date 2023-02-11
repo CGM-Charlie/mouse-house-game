@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Food
   - Home
+  - Trap
   layers:
   - Default
   - TransparentFX
