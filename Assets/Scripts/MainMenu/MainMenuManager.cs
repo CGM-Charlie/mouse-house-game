@@ -24,6 +24,12 @@ public class MainMenuManager : MonoBehaviour{
     [SerializeField] private GameObject startGameObj;
     [SerializeField] private GameObject creditsObj;
     [SerializeField] private GameObject quitObj;
+    
+    // Credits Screen
+    [Header("Credits Screen")]
+    [SerializeField] private GameObject creditsScreenObj;
+    [SerializeField] private GameObject creditsScreenPosIn;
+    [SerializeField] private GameObject creditsScreenPosOut;
 
     // UI Screens
     void Start() {
@@ -50,6 +56,14 @@ public class MainMenuManager : MonoBehaviour{
         quitButton.onClick.AddListener(QuitGame);
         quitButtonEvents.onSelectAction.AddListener(delegate { SelectedTweenAnimation(quitObj); });
         quitButtonEvents.onDeselectAction.AddListener(delegate { DeselectedTweenAnimation(quitObj); });
+        
+        // Credits Button
+        var creditsReturnButton = creditsScreenObj.transform.Find("ReturnButton").GetComponent<Button>();
+        var creditsReturnButtonEvents = creditsScreenObj.transform.Find("ReturnButton").GetComponent<ButtonEventHandlers>();
+        creditsReturnButton.onClick.AddListener(ReturnToMenu);
+        creditsReturnButtonEvents.onSelectAction.AddListener(delegate { SelectedTweenAnimation(creditsReturnButton.gameObject); });
+        creditsReturnButtonEvents.onDeselectAction.AddListener(delegate { DeselectedTweenAnimation(creditsReturnButton.gameObject); });
+        
     }
     
     // Start Game Button
@@ -59,13 +73,21 @@ public class MainMenuManager : MonoBehaviour{
     
     // Credits Button
     private void Credits() {
-        
+        MenuTitle_OutAnimation();
+        Credits_InAnimation();
     }
     
     // Quit Button
     private void QuitGame() {
         Application.Quit();
     }
+    
+    // Credits Return Button
+    private void ReturnToMenu() {
+        Credits_OutAnimation();
+        MenuTitle_InAnimation();
+    }
+    
 
     // Tween Animations
     private void MenuTitle_InAnimation() {
@@ -96,6 +118,17 @@ public class MainMenuManager : MonoBehaviour{
         // Menu Options
         LeanTween.cancel(menuOptionsObj);
         LeanTween.move(menuOptionsObj, menuOptionsPosOut.transform.position, 0.5f).setEaseOutExpo().setDelay(0.5f);
+    }
+    
+    // Credits
+    private void Credits_InAnimation() {
+        LeanTween.cancel(creditsScreenObj);
+        LeanTween.move(creditsScreenObj, creditsScreenPosIn.transform.position, 0.5f).setEaseOutExpo().setDelay(0.5f);
+    }
+    
+    private void Credits_OutAnimation() {
+        LeanTween.cancel(creditsScreenObj);
+        LeanTween.move(creditsScreenObj, creditsScreenPosOut.transform.position, 0.5f).setEaseOutExpo().setDelay(0.5f);
     }
     
     private void SelectedTweenAnimation(GameObject obj) {
