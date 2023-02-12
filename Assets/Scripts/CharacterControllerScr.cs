@@ -10,7 +10,7 @@ public class CharacterControllerScr : MonoBehaviour
     public bool changeLevel;
 
     private Rigidbody2D rb;
-    private BoxCollider bc;
+    private BoxCollider2D bc;
 
     public LayerMask platform;
     
@@ -23,7 +23,7 @@ public class CharacterControllerScr : MonoBehaviour
     void Update()
     {
         rb = GetComponent<Rigidbody2D>();
-        bc = GetComponent<BoxCollider>();
+        bc = GetComponent<BoxCollider2D>();
         transform.Translate(Input.GetAxis("Horizontal") * speed * Time.deltaTime, Input.GetAxis("Vertical") * speed * Time.deltaTime, 0f);
 
         if (IsSidewaysRight() || IsSidewaysLeft())

@@ -20,7 +20,7 @@ public class DoorCheckScr : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other) // to see when the player enters the collider
+    private void OnTriggerEnter2D (Collider2D other) // to see when the player enters the collider
     {
         if(other.gameObject.tag == "Home") 
         {
