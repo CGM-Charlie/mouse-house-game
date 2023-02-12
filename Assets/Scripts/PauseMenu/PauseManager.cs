@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using JoshH.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PauseManager : MonoBehaviour {
@@ -44,16 +45,18 @@ public class PauseManager : MonoBehaviour {
 
     private void PauseGame() {
         isMenuOpen = true;
+        Cursor.visible = true;
         Pause_InAnimation();
     }
 
     private void ContinueGame() {
         isMenuOpen = false;
+        Cursor.visible = false;
         Pause_OutAnimation();
     }
 
     private void QuitGame() {
-        
+        SceneManager.LoadScene("MainMenu");
     }
     
     private void Pause_InAnimation() {

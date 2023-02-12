@@ -13,11 +13,6 @@ public class CharacterControllerScr : MonoBehaviour
     private BoxCollider2D bc;
 
     public LayerMask platform;
-    
-    void Start()
-    {
-        Cursor.lockState = CursorLockMode.Locked;
-    }
 
     // Update is called once per frame
     void Update()

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using JoshH.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MainMenuManager : MonoBehaviour{
@@ -68,7 +69,7 @@ public class MainMenuManager : MonoBehaviour{
     
     // Start Game Button
     private void StartGame() {
-        
+        SceneManager.LoadScene("HouseScene");
     }
     
     // Credits Button
