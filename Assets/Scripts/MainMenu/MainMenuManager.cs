@@ -5,13 +5,31 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class MainMenuManager : MonoBehaviour{
+    
+    // Title 
+    [Header("Menu Title")] 
+    [SerializeField] private GameObject menuTitleObj;
+    [SerializeField] private GameObject menuTitleBackgroundObj;
+    [SerializeField] private GameObject menuTitlePosIn;
+    [SerializeField] private GameObject menuTitlePosOut;
+    
+    // Menu Options
+    [Header("Menu Options")] 
+    [SerializeField] private GameObject menuOptionsObj;
+    [SerializeField] private GameObject menuOptionsPosIn;
+    [SerializeField] private GameObject menuOptionsPosOut;
+
     // Menu Buttons
+    [Header("Menu Buttons")]
     [SerializeField] private GameObject startGameObj;
     [SerializeField] private GameObject creditsObj;
     [SerializeField] private GameObject quitObj;
 
     // UI Screens
     void Start() {
+        // Start Animations
+        MenuTitle_InAnimation();
+
         // Start Button
         var startGameButton = startGameObj.GetComponent<Button>();
         var startGameButtonEvents = startGameObj.GetComponent<ButtonEventHandlers>();
@@ -49,7 +67,37 @@ public class MainMenuManager : MonoBehaviour{
         Application.Quit();
     }
 
-    // General Tween Animations
+    // Tween Animations
+    private void MenuTitle_InAnimation() {
+        // Menu Title
+        LeanTween.cancel(menuTitleObj);
+        LeanTween.move(menuTitleObj, menuTitlePosIn.transform.position, 0.5f).setEaseOutExpo().setDelay(0.5f);
+        
+        // Menu Title Background
+        menuTitleBackgroundObj.transform.localScale = Vector3.zero;
+        LeanTween.cancel(menuTitleBackgroundObj);
+        LeanTween.scale(menuTitleBackgroundObj, new Vector3(1.3f, 1.0f), 0.3f).setEaseOutExpo().setDelay(0.7f);
+        
+        // Menu Options
+        LeanTween.cancel(menuOptionsObj);
+        LeanTween.move(menuOptionsObj, menuOptionsPosIn.transform.position, 0.5f).setEaseOutExpo().setDelay(0.5f);
+    }
+    
+    private void MenuTitle_OutAnimation() {
+        // Menu Title
+        LeanTween.cancel(menuTitleObj);
+        LeanTween.move(menuTitleObj, menuTitlePosOut.transform.position, 0.5f).setEaseOutExpo().setDelay(0.5f);
+        
+        // Menu Title Background
+        menuTitleBackgroundObj.transform.localScale = new Vector3(1.3f, 1.0f);
+        LeanTween.cancel(menuTitleBackgroundObj);
+        LeanTween.scale(menuTitleBackgroundObj, Vector3.zero, 0.3f).setEaseOutExpo().setDelay(0.7f);
+        
+        // Menu Options
+        LeanTween.cancel(menuOptionsObj);
+        LeanTween.move(menuOptionsObj, menuOptionsPosOut.transform.position, 0.5f).setEaseOutExpo().setDelay(0.5f);
+    }
+    
     private void SelectedTweenAnimation(GameObject obj) {
         // Change Color
         var gradient = obj.transform.Find("ButtonFill").GetComponent<UIGradient>();
