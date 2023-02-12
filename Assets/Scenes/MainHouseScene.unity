@@ -621,6 +621,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 865274959}
   speed: 1
+  distanceBetween: 5
 --- !u!65 &1919814119
 BoxCollider:
   m_ObjectHideFlags: 0
