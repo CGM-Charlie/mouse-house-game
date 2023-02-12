@@ -187,7 +187,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
+<<<<<<< Updated upstream
   m_Color: {r: 0.04142934, g: 0.10483746, b: 0.1792453, a: 1}
+=======
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+>>>>>>> Stashed changes
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -204,7 +208,11 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+<<<<<<< Updated upstream
   borderWidth: 10
+=======
+  borderWidth: 0
+>>>>>>> Stashed changes
   falloffDistance: 1
 --- !u!222 &203554959
 CanvasRenderer:
@@ -283,7 +291,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 12}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
+<<<<<<< Updated upstream
   m_AnchoredPosition: {x: -15, y: -103}
+=======
+  m_AnchoredPosition: {x: -88, y: -115}
+>>>>>>> Stashed changes
   m_SizeDelta: {x: 558.9119, y: 172.2221}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &792183903
@@ -308,8 +320,13 @@ MonoBehaviour:
       m_Calls: []
   m_text: CREDITS
   m_isRightToLeft: 0
+<<<<<<< Updated upstream
   m_fontAsset: {fileID: 11400000, guid: 2d3c39aea18904e8c9785e5662672c0d, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 2a62dc7c9d68f44b394cc064996dafda, type: 2}
+=======
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+>>>>>>> Stashed changes
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -333,8 +350,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
+<<<<<<< Updated upstream
   m_fontSize: 164
   m_fontSizeBase: 164
+=======
+  m_fontSize: 150
+  m_fontSizeBase: 150
+>>>>>>> Stashed changes
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -369,7 +391,11 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
+<<<<<<< Updated upstream
   m_margin: {x: 0, y: 0.6698456, z: 0, w: 0}
+=======
+  m_margin: {x: 0, y: 0.6698456, z: -186.65399, w: 0}
+>>>>>>> Stashed changes
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -643,11 +669,19 @@ MonoBehaviour:
 
     Artist:
 
+<<<<<<< Updated upstream
     Gabe
     Mision'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2d3c39aea18904e8c9785e5662672c0d, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 2a62dc7c9d68f44b394cc064996dafda, type: 2}
+=======
+    Gabriel
+    Mision'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+>>>>>>> Stashed changes
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -775,25 +809,41 @@ MonoBehaviour:
   blendMode: 0
   intensity: 1
   gradientType: 0
+<<<<<<< Updated upstream
   linearColor1: {r: 0.3372549, g: 0.8, b: 0.9490196, a: 1}
   linearColor2: {r: 0.18431373, g: 0.5019608, b: 0.92941177, a: 1}
+=======
+  linearColor1: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  linearColor2: {r: 1, g: 0, b: 0, a: 1}
+>>>>>>> Stashed changes
   cornerColorUpperLeft: {r: 1, g: 0, b: 0, a: 1}
   cornerColorUpperRight: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   cornerColorLowerRight: {r: 0, g: 1, b: 0, a: 1}
   cornerColorLowerLeft: {r: 0, g: 0, b: 1, a: 1}
   linearGradient:
     serializedVersion: 2
+<<<<<<< Updated upstream
     key0: {r: 0.5137255, g: 0.227451, b: 0.7058824, a: 1}
     key1: {r: 0.9921569, g: 0.1137255, b: 0.1137255, a: 1}
     key2: {r: 0.9882353, g: 0.6901961, b: 0.2705882, a: 0}
+=======
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+>>>>>>> Stashed changes
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
     ctime0: 0
+<<<<<<< Updated upstream
     ctime1: 32768
     ctime2: 65535
+=======
+    ctime1: 65535
+    ctime2: 0
+>>>>>>> Stashed changes
     ctime3: 0
     ctime4: 0
     ctime5: 0
@@ -808,9 +858,15 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
+<<<<<<< Updated upstream
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
   angle: 90
+=======
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  angle: 0
+>>>>>>> Stashed changes
 --- !u!114 &1385551579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -838,7 +894,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+<<<<<<< Updated upstream
   m_RaycastTarget: 0
+=======
+  m_RaycastTarget: 1
+>>>>>>> Stashed changes
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1125,6 +1185,7 @@ MonoBehaviour:
   blendMode: 0
   intensity: 1
   gradientType: 0
+<<<<<<< Updated upstream
   linearColor1: {r: 0.3372549, g: 0.8, b: 0.9490196, a: 1}
   linearColor2: {r: 0.18431373, g: 0.5019608, b: 0.92941177, a: 1}
   cornerColorUpperLeft: {r: 0.18431373, g: 0.5019608, b: 0.92941177, a: 1}
@@ -1136,14 +1197,32 @@ MonoBehaviour:
     key0: {r: 0.5137255, g: 0.227451, b: 0.7058824, a: 1}
     key1: {r: 0.9921569, g: 0.1137255, b: 0.1137255, a: 1}
     key2: {r: 0.9882353, g: 0.6901961, b: 0.2705882, a: 0}
+=======
+  linearColor1: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  linearColor2: {r: 1, g: 0, b: 0, a: 1}
+  cornerColorUpperLeft: {r: 1, g: 0, b: 0, a: 1}
+  cornerColorUpperRight: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  cornerColorLowerRight: {r: 0, g: 1, b: 0, a: 1}
+  cornerColorLowerLeft: {r: 0, g: 0, b: 1, a: 1}
+  linearGradient:
+    serializedVersion: 2
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+>>>>>>> Stashed changes
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
     ctime0: 0
+<<<<<<< Updated upstream
     ctime1: 32768
     ctime2: 65535
+=======
+    ctime1: 65535
+    ctime2: 0
+>>>>>>> Stashed changes
     ctime3: 0
     ctime4: 0
     ctime5: 0
@@ -1158,9 +1237,15 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
+<<<<<<< Updated upstream
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
   angle: 360
+=======
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  angle: 0
+>>>>>>> Stashed changes
 --- !u!114 &2013470245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1355,8 +1440,13 @@ MonoBehaviour:
       m_Calls: []
   m_text: Main Menu
   m_isRightToLeft: 0
+<<<<<<< Updated upstream
   m_fontAsset: {fileID: 11400000, guid: 2d3c39aea18904e8c9785e5662672c0d, type: 2}
   m_sharedMaterial: {fileID: -951927539889474888, guid: 2d3c39aea18904e8c9785e5662672c0d, type: 2}
+=======
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+>>>>>>> Stashed changes
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
